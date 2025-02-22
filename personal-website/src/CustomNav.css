@@ -1,0 +1,15 @@
+.header {
+    background-color: #2a323d;
+    min-height: 5vh;
+    font-size: calc(21px);
+    color: #f3e8ee;
+    position: sticky; 
+    top: 0; 
+    z-index: 1; 
+  }
+  
+  .Title-text {
+    font-size: calc(25px + 2vmin);
+  }
+  
+  

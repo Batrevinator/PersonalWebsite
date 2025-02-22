@@ -1,0 +1,35 @@
+@font-face {
+  font-family: GlacialIndifference;
+  src: url("../public/fonts/glacial-indifference.regular.otf");
+}
+
+* {
+  font-family: GlacialIndifference;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x:hidden;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.section-header{
+  font-size: 3vw;
+  font-weight: bold;
+}
+
+.section-card-header{
+  height: 80px;
+}
+
+.transparent-image{
+    opacity: 0.5;
+}
