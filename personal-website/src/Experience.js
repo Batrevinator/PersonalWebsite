@@ -134,6 +134,48 @@ class Experience extends React.Component{
         </Row>
         )
     }
+    evtInjectedWhere(){
+        return(
+        <Row>
+        <Col xs = {{size:3}}>
+            <CardImg src='./EVTPic.png'/>
+        </Col>
+        <Col >
+            <CardText>
+                RIT Electric Vehicle Team
+            </CardText>
+            <CardText>
+                Rochester, New York
+            </CardText>
+        </Col>
+        </Row>
+        )
+    }
+    evtInjectedWhen(){
+        return(
+        <Row>
+        <Col >
+            <CardText>
+            January 2022 - Present
+            </CardText>
+        </Col>
+        </Row>
+        )
+    }
+    evtInjectedWhat(){
+        return(
+        <Row>
+        <Col >
+            <CardText>
+                Lead Database Engineer
+            </CardText>
+            <CardText>
+                Database Team
+            </CardText>
+        </Col>
+        </Row>
+        )
+    }
 
     render(){
         return(
@@ -174,7 +216,7 @@ class Experience extends React.Component{
                                     </Col>
                                 </Row>
                                 <hr/>
-                                <Row style={{marginTop: 20}}>
+                                <Row style={{marginTop: 30}}>
                                     <Label style={{fontWeight:"bold"}} tag={"h2"}>GlobalFoundries</Label>
                                 </Row>
                                 <Row>
@@ -201,7 +243,7 @@ class Experience extends React.Component{
                                     </Col>
                                 </Row>
                                 <hr/>
-                                <Row style={{marginTop: 20}}>
+                                <Row style={{marginTop: 30}}>
                                     <Label style={{fontWeight:"bold"}} tag={"h2"}>Transonic Systems Inc.</Label>
                                 </Row>
                                 <Row>
@@ -223,6 +265,33 @@ class Experience extends React.Component{
                                     </Col>
                                     <Col>
                                         <CardImg src={"./EKGmachine.jpg"}/>
+                                    </Col>
+                                </Row>
+                                <hr/>
+                                <Row style={{marginTop: 30}}>
+                                    <Label style={{fontWeight:"bold"}} tag={"h2"}>Electric Vehicle Team</Label>
+                                </Row>
+                                <Row>
+                                    <WhereWhatWhenInjectable where={this.evtInjectedWhere()} when={this.evtInjectedWhen()} what={this.evtInjectedWhat()}/>
+                                </Row>
+                                <Label style={{marginBottom: 30}}tag = "h1" for="evtDesc">Description</Label>
+                                <Row style={{alignItems:"center"}} id = "evtsDesc" xs = "2">
+                                    <Col>
+                                        <CardImg src={"./PrimaryEvtPic.png"}/>
+                                    </Col>
+                                    <Col>
+                                        <CardText>
+                                            I have been a member of the Electric Vehicle Team (EVT) since my softmore year at RIT.
+                                            EVT is a student run organization that designs and builds electric racing vehicles 
+                                            (primarily electric motorcycles). My current role on the team is as the Lead Database 
+                                            Engineer on the database team. I started this team and the database project on the team 
+                                            and as such have worn many hats. While in this role I have designed DB schemas, stood up 
+                                            data input streams, and handled a migration from an SQL to a new NoSQL database. Most recently, 
+                                            I have been able to take on a more managerial role as the team has grown. I am proud to say 
+                                            that since the team's inception at the beginning of the 2024 - 2025 academic year we have 
+                                            completed a full stack application which allows for the uploading of bike telemetry data to 
+                                            our NoSQL DB. With this data we are researching methods to improve bike performace in races.
+                                        </CardText>
                                     </Col>
                                 </Row>
                             </CardBody>

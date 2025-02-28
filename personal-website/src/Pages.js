@@ -4,6 +4,7 @@ import AboutMe from './AboutMe';
 import Education from './Education';
 import Experience from './Experience';
 import Projects from './Projects';
+import Contact from './Contact';
 
 function Pages() {
   return (
@@ -13,6 +14,7 @@ function Pages() {
       <Experience/>
       <Projects/>
       <Education/>
+      <Contact/>
     </React.StrictMode>
   );
 }

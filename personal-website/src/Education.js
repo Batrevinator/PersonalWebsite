@@ -25,6 +25,9 @@ class Education extends React.Component{
             <CardText>
                 Rochester Institute of Technology
             </CardText>
+            <CardText>
+                Rochester, New York
+            </CardText>
         </Col>
         </Row>
         )
@@ -64,7 +67,7 @@ class Education extends React.Component{
                     Education
                 </CardTitle>    
                     <Row style={{fontSize: "1.5vw"}}>
-                        <Col xs={{size: 10, offset:1}}>
+                        <Col xs={{size: 12}}>
                             <CardBody>
                             <WhereWhatWhenInjectable where={this.injectedWhere()} when={this.injectedWhen()} what={this.injectedWhat()}/>
                             </CardBody>

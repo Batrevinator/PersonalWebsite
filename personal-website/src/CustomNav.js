@@ -19,6 +19,7 @@ class CustomNav extends React.Component{
     {to: "/#experience", label: "Experience"},
     {to: "/#projects", label: "Projects"},
     {to: "/#education", label: "Education"},
+    {to: "/#contact", label: "Contact"}
   ];
 
   scrollWithOffset = (el) => {
