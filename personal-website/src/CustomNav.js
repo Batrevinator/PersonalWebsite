@@ -1,4 +1,3 @@
-import { Link } from 'react-router'; // Assuming you're using React Router
 import "./CustomNav.css"
 import {HashLink} from "react-router-hash-link"
 import {
