@@ -15,7 +15,7 @@ class HomePage extends React.Component{
                             <Col xs={{offset:2}}>
                                 <CardBody>
                                     <Row style={{marginTop: "12%"}}>
-                                        <CardTitle className="section-header" style={{ color:'#f3e8ee'}}>
+                                        <CardTitle className="section-header" style={{ color:'#f3e8ee', fontSize: "3vw"}}>
                                             Hello, I'm Trevor!
                                         </CardTitle>  
                                     </Row>

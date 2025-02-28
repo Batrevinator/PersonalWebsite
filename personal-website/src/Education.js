@@ -59,7 +59,7 @@ class Education extends React.Component{
 
     render(){
         return(
-            <Card  color= "light" className="text-center" id="education">
+            <Card className="text-center" id="education">
                 <CardTitle className='section-header'> 
                     Education
                 </CardTitle>    

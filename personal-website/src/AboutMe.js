@@ -34,7 +34,7 @@ class AboutMe extends React.Component{
                 <CardTitle className='section-header'> 
                     About Me
                 </CardTitle>
-                <Row style={{fontSize: "1.5vw", justifyContent: "center"}}>
+                <Row style={{fontSize: "1.5rem", justifyContent: "center"}}>
                     <Col xs={{size: 8, offset:0}}>
                         <CardBody>
                                 <CardText>

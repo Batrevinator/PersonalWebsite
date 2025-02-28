@@ -15,7 +15,7 @@ class WhereWhatWhenInjectable extends React.Component{
     }
   render(){
     return (
-        <Row style={{marginBottom: 70}} xs = "3">
+        <Row style={{marginBottom: 70, marginTop: 20}} xs = "3">
         <Col>
             <Label tag = {'h2'}>Where</Label>
             <hr
