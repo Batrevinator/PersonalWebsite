@@ -12,12 +12,12 @@ import React from 'react';
 class CustomNav extends React.Component{
   
   navStructure = [
-    {to: "/path#top", label: "Home"},
-    {to: "/#about-me", label: "About Me"},
-    {to: "/#experience", label: "Experience"},
-    {to: "/#projects", label: "Projects"},
-    {to: "/#education", label: "Education"},
-    {to: "/#contact", label: "Contact"}
+    {to: "./path#top", label: "Home"},
+    {to: "./#about-me", label: "About Me"},
+    {to: "./#experience", label: "Experience"},
+    {to: "./#projects", label: "Projects"},
+    {to: "./#education", label: "Education"},
+    {to: "./#contact", label: "Contact"}
   ];
 
   scrollWithOffset = (el) => {
