@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/batrevinator.github.io/PersonalWebsite/static/css/main.61522d3b.css",
+    "main.js": "/batrevinator.github.io/PersonalWebsite/static/js/main.df86f5b2.js",
+    "static/js/453.253ccfac.chunk.js": "/batrevinator.github.io/PersonalWebsite/static/js/453.253ccfac.chunk.js",
+    "static/media/glacial-indifference.regular.otf": "/batrevinator.github.io/PersonalWebsite/static/media/glacial-indifference.regular.884dc679b35db5f785f2.otf",
+    "index.html": "/batrevinator.github.io/PersonalWebsite/index.html",
+    "main.61522d3b.css.map": "/batrevinator.github.io/PersonalWebsite/static/css/main.61522d3b.css.map",
+    "main.df86f5b2.js.map": "/batrevinator.github.io/PersonalWebsite/static/js/main.df86f5b2.js.map",
+    "453.253ccfac.chunk.js.map": "/batrevinator.github.io/PersonalWebsite/static/js/453.253ccfac.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.61522d3b.css",
+    "static/js/main.df86f5b2.js"
+  ]
+}
