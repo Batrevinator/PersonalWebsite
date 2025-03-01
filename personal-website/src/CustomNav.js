@@ -4,9 +4,7 @@ import {
   Navbar,
   Nav,
   NavItem,
-  NavLink,
   NavbarBrand,
-  Container,
   Col
 } from 'reactstrap';
 import React from 'react';

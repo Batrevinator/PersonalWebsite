@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
 import {
     Row,
     Col,
@@ -11,7 +10,6 @@ import {
     Label,
     } from 'reactstrap';
 import './index.css';
-import WhereWhatWhenInjectable from './WhereWhatWhenInjectable';
 
 class Projects extends React.Component{
 

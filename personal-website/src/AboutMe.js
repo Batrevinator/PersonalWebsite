@@ -1,16 +1,11 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
 import {
     Row,
     Col,
-    Container,
     Card,
     CardTitle,
     CardBody,
-    CardHeader,
     CardText,
-    CardImg,
-    CardImgOverlay
     } from 'reactstrap';
 import './index.css';
 

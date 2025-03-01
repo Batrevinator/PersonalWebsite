@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
 import {
     Row,
     Col,
@@ -8,7 +7,6 @@ import {
     Label,
     CardBody,
     } from 'reactstrap';
-import WhereWhatWhenInjectable from './WhereWhatWhenInjectable';
 import './index.css';
 
 
