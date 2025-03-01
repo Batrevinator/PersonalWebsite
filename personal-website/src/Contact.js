@@ -14,7 +14,7 @@ class Contact extends React.Component{
 
     render(){
         return(
-            <Card color = "light" className="text-center" id="education">
+            <Card color = "light" className="text-center" id="contact">
                 <CardTitle className='section-header'> 
                     Contact
                 </CardTitle>   
