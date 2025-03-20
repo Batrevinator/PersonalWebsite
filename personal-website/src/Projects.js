@@ -174,7 +174,7 @@ class Projects extends React.Component{
                                             This is a project that we work on as a team that is posed by a sponsor from outside of the 
                                             school. For me this was a project called EZNotate. EZNotate is a mobile application which 
                                             uses computer vision to scan a new kind of chess notation and automatically record games with a 
-                                            simple scan. This new chass notation was created to make chess more accessible to those with 
+                                            simple scan. This new chess notation was created to make chess more accessible to those with 
                                             disabilities, or language barriers that make traditional chess notation difficult to learn 
                                             or use. My role on the team has been largely focused on our database and data engineering. 
                                             A major feature of this system is that users can save their previously played games for later 

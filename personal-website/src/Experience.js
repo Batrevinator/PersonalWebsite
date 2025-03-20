@@ -280,7 +280,7 @@ class Experience extends React.Component{
                                     </Col>
                                     <Col>
                                         <CardText>
-                                            I have been a member of the Electric Vehicle Team (EVT) since my softmore year at RIT.
+                                            I have been a member of the Electric Vehicle Team (EVT) since my sophomore year at RIT.
                                             EVT is a student run organization that designs and builds electric racing vehicles 
                                             (primarily electric motorcycles). My current role on the team is as the Lead Database 
                                             Engineer on the database team. I started this team and the database project on the team 
