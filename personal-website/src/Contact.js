@@ -19,8 +19,8 @@ class Contact extends React.Component{
                     Contact
                 </CardTitle>   
                 <CardBody>
-                <Row style={{fontSize: "1.5vw"}}>
-                    <Col xs = {{size: 4, offset: 2}}>
+                <Row style={{fontSize: "1.5vw"}} xs = {3}>
+                    <Col>
                         <Label tag = {'h2'}>Phone</Label>
                         <hr
                             style={{
@@ -33,7 +33,7 @@ class Contact extends React.Component{
                             (518)222-9800
                         </Row>
                     </Col>
-                    <Col xs = {{size: 4}}>
+                    <Col>
                         <Label tag = {'h2'}>Email</Label>
                         <hr
                             style={{
@@ -44,6 +44,19 @@ class Contact extends React.Component{
                         />
                         <Row style = {{justifyContent:"center", alignItems:"center"}}>
                             tmb7852@rit.edu
+                        </Row>
+                    </Col>
+                    <Col>
+                        <Label tag = {'h2'}>Github</Label>
+                        <hr
+                            style={{
+                                color: 'black',
+                                backgroundColor: 'black',
+                                height: 2
+                            }}
+                        />
+                        <Row style = {{justifyContent:"center", alignItems:"center"}}>
+                        github.com/Batrevinator
                         </Row>
                     </Col>
                 </Row>

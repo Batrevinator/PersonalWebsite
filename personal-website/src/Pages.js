@@ -10,11 +10,6 @@ function Pages() {
   return (
     <React.StrictMode>
       <HomePage/>
-      <AboutMe/>
-      <Experience/>
-      <Projects/>
-      <Education/>
-      <Contact/>
     </React.StrictMode>
   );
 }

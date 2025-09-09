@@ -1,49 +1,84 @@
 import React from 'react';
-import {
-    Row,
-    Col,
-    Card,
-    CardTitle,
-    CardBody,
-    CardText,
-    } from 'reactstrap';
-import './index.css';
+import styles from './AboutMe.module.css';
+import { Row } from 'reactstrap';
 
-class AboutMe extends React.Component{
 
-    introCardText = "Currently, I am a student at the Rochester Institute of Technology set to graduate with a \
-    bachelors degree in software engineering at the end of this semester (June 2025). My previous development \
-    experience has been that of a backend engineer with a focus on embedded software and data engineering. \
-    However, I am always looking for opportunites to learn new skills and have started to branch into full \
-    stack development."
+const wrapTLetters = (text) => {
+  return text.replace(/(t|T)/g, (match) => `<span class="letter-t">${match}</span>`);
+};
 
-    introCardExperience = "I have completed three Co-ops with three separate companies. Namely, Transonic \
-    Systems, GlobalFoundries, and Keurig Dr Pepper. Outside of these activities I have also gained experience \
-    through clubs and personal projects. I will go into more detail on my experience in that section if you are \
-    interested.\
-    "
+const AboutMe = () => {
+  return (
+    <div className={styles.container}>
+      <div className={styles.profileSection}>
+        <img
+          src="/Profile.jpg"
+          alt="Your Name"
+          className={styles.profileImage}
+        />
+        <h1 dangerouslySetInnerHTML={{ __html: wrapTLetters("Trevor Borden") }} />
+        <p
+          className={styles.title}
+          dangerouslySetInnerHTML={{
+            __html: wrapTLetters("Embedded Software Engineer | Full Stack Engineer"),
+          }}
+        />
+        <a target = "_blank" href = "Borden_Trevor_Resume.pdf" lassName={styles.title}>
+            My Resume 
+        </a>
+      </div>
 
-    render(){
-        return(
-            <Card color= "light" className="text-center" id="about-me">
-                <CardTitle className='section-header'> 
-                    About Me
-                </CardTitle>
-                <Row style={{fontSize: "1.5rem", justifyContent: "center"}}>
-                    <Col xs={{size: 8, offset:0}}>
-                        <CardBody>
-                                <CardText>
-                                    {this.introCardText}
-                                </CardText>
-                                <CardText>
-                                    {this.introCardExperience}
-                                </CardText>
-                        </CardBody>
-                    </Col>
-                </Row>
-            </Card>
-        );
-    }
-}
+
+      <div className={styles.bio}>
+        <h2 dangerouslySetInnerHTML={{ __html: wrapTLetters("About Me") }} />
+        <p
+          dangerouslySetInnerHTML={{
+            __html: wrapTLetters(
+              "Hi! I am a software engineer with a broad spectrum of experience in embedded software and full stack development. I am a recent graduate from Rochester Institute of Technology and am seeking new opportunities to grow as a software engineer."
+            ),
+          }}
+        />
+      </div>
+
+  <div className={styles.skills}>
+  <h2 dangerouslySetInnerHTML={{ __html: wrapTLetters("Skills") }} />
+
+    <div className={styles.skillsGrid}>
+        <div>
+        <h3 className={styles.subheading} dangerouslySetInnerHTML={{ __html: wrapTLetters("Languages") }} />
+        <ul>
+            {["C/C++", "Python", "JavaScript", "TypeScript", "PHP", "MySQL"].map((skill, index) => (
+            <li key={`lang-${index}`} dangerouslySetInnerHTML={{ __html: wrapTLetters(skill) }} />
+            ))}
+        </ul>
+
+        <h3 className={styles.subheading} dangerouslySetInnerHTML={{ __html: wrapTLetters("Frameworks & Tools") }} />
+        <ul>
+            {["React(strap)", "Flask", "MongoDB", "OracleDB", "Google Test"].map((skill, index) => (
+            <li key={`tools-${index}`} dangerouslySetInnerHTML={{ __html: wrapTLetters(skill) }} />
+            ))}
+        </ul>
+        </div>
+
+        <div>
+        <h3 className={styles.subheading} dangerouslySetInnerHTML={{ __html: wrapTLetters("Systems & Platforms") }} />
+        <ul>
+            {["RTOS", "Linux", "Windows", "Mac"].map((skill, index) => (
+            <li key={`systems-${index}`} dangerouslySetInnerHTML={{ __html: wrapTLetters(skill) }} />
+            ))}
+        </ul>
+
+        <h3 className={styles.subheading} dangerouslySetInnerHTML={{ __html: wrapTLetters("Practices") }} />
+        <ul>
+            {["Agile & Scrum", "CI/CD", "Software Architecture", "Unit & Integration Testing", "Version Control (Git, GitHub, Bitbucket, Jira)"].map((skill, index) => (
+            <li key={`practices-${index}`} dangerouslySetInnerHTML={{ __html: wrapTLetters(skill) }} />
+            ))}
+        </ul>
+        </div>
+    </div>
+    </div>
+    </div>
+  );
+};
 
 export default AboutMe;
