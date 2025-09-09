@@ -1,39 +1,31 @@
 import React from 'react';
-import {
-    Row,
-    Col, 
-    Card, 
-    CardImg, 
-    CardImgOverlay, 
-    CardTitle, 
-    CardText, 
-    CardBody
-} from 'reactstrap';
+import { Row, Col, CardBody, CardTitle, CardText } from 'reactstrap';
 import './index.css';
 import './HomePage.css';
 
-class HomePage extends React.Component{
-    render(){
-        return(
-            <Row id="home">
-                <Col style={{zIndex: "1"}} xs={{size: 6, offset: 0}}>
-                    <Row xs={"1"}>
-                        <CardBody style={{marginLeft: "3%"}}>
-                            <Row style={{marginTop: "26%"}}>
-                                <CardTitle className="section-header" style={{fontSize: "55px", opacity: .75}}>
-                                    Hi, I am <span className='letter-t'>T</span>revor!
-                                </CardTitle>  
-                            </Row>
-                            <Row>
-                                <CardText style={{fontSize: "45px", opacity: .65}}>
-                                    I am a sof<span className='letter-t'>t</span>ware engineer with a love for designing and implemen<span className='letter-t'>t</span>ing elegan<span className='letter-t'>t</span> solu<span className='letter-t'>t</span>ions.
-                                </CardText>  
-                            </Row>
-                        </CardBody>
-                    </Row>
+class HomePage extends React.Component {
+    render() {
+        return (
+            <Row id="home" className="home-row">
+                {/* Text Column */}
+                <Col xs={12} md={6} className="intro-col overlay-text">
+                    <CardBody className="intro-card">
+                        <CardTitle className="section-header">
+                            Hi, I am <span className='letter-t'>T</span>revor!
+                        </CardTitle>
+                        <CardText className="intro-text">
+                            I am a sof<span className='letter-t'>t</span>ware engineer with a love for designing and implemen<span className='letter-t'>t</span>ing elegan<span className='letter-t'>t</span> solu<span className='letter-t'>t</span>ions.
+                        </CardText>
+                    </CardBody>
                 </Col>
-                <Col xs={{size: 6}}>
-                    <img style={{minHeight: '91vh', objectFit: 'cover'}} className='img-fluid left-faded' src={'./IMG_9931.CR2.jpg'}/>
+
+                {/* Image Column */}
+                <Col xs={12} md={6} className="img-col">
+                    <img
+                        src={'./IMG_9931.CR2.jpg'}
+                        alt="Trevor"
+                        className='home-img'
+                    />
                 </Col>
             </Row>
         );
